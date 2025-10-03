@@ -1,0 +1,21 @@
+# Fragment specific to C++ source files
+If:
+    PathExclude: [.*\.c]
+CompileFlags:
+    Add:
+        - "-std=c++23"
+        - "-I../mimalloc/deps/mimalloc/include"
+        - "-I../zip/zlib/include"
+        - "-IC:/apps/msvc/atlmfc/include"
+        - "-Idokan/include/dokan"
+        - "-Iatl/include"
+        - "-D_CRT_SECURE_NO_WARNINGS"
+        - '-D_WIN32'
+        - '-D_WIN32_WINNT=0x0601'
+        - '-DNOMINMAX'
+        - '-include windows.h'
+        - '-Wno-nontrivial-memcall'
+        - '-Wno-dangling-assignment-gsl'
+        
+Diagnostics:
+  Suppress: [bugprone-sizeof-expression, readability-misleading-indentation, unused-includes]
