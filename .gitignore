@@ -13,5 +13,4 @@ bin/
 deps/
 logs/
 temp/
-physfs/
-miniz/
+
