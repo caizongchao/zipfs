@@ -1,1 +1,1 @@
-tool/njx --release
+tool\njx --release
