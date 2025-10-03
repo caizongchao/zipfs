@@ -1,2 +1,2 @@
-mount zip archive as local direcory path.
+mount zip archive as local direcory.
 
